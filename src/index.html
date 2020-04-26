@@ -1,14 +1,178 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+    <!DOCTYPE html>
+<html lang="es">
+
+<!--Se agregan metadatos, título en pestaña y hoja de estilos-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado César</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<!--Inicio cuerpo sitio web -->   
+<section id="sec1">
+    <div class="figure">
+      <a href="#sec1">
+        <img src="http://imgfz.com/i/6fsdtAy.png"
+             width="180"
+             alt="Haz clic aquí para volver a la página de inicio">
+            </a>
     </div>
-    <script src="index.js" type="module"></script>
-  </body>
+        <div class="contenedor-texto">
+            <h1 id= "bienvenida">Envía y recibe mensajes de forma segura</h1>
+            <br>
+            <p id= "bajada">Mensaje Secreto es una aplicación de mensajería instantánea móvil. Está dirigida
+              principalmente a mujeres ubicadas en el territorio chileno para obtener asesoría y asistencia en 
+              situaciones de violencia de género. A través de la app te contactamos con la Red chilena contra la violencia
+              hacia las mujeres, puedes enviar y recibir mensajes encriptados y desencriptarlos 
+              mediante el Cifrado César.<br><br> 
+                El Cifrado César es un tipo de cifrado por sustitución, es decir que cada letra del texto 
+                original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) 
+                más adelante en el mismo alfabeto. Dentro del chat debes elegir el número de desplazamiento 
+                (que llamaremos clave), procuren definirlo previamente.<br><br>
+                Para comenzar ingresar al chat con un nombre de usuario que permanecerá sólo lo que dure la 
+                sesión. Después escoge la región a la que perteneces.</p>
+            <br>
+
+<!--Botón, recibe el nombre y envia a otra pantalla-->
+    <input id="nombre" placeholder="Ingresa tu nombre de usuario" autocomplete="off"> 
+    <button class="designButton"><a id="aceptar" href="#sec2">Aceptar</a></button>
+        </div>
+        </section>
+
+<!--Pantalla dos, lista de usuarios activos -->
+        <section id="sec2">
+  
+          <div class="contenedor-usuariosactivos">
+            <img src="http://imgfz.com/i/o67ALfW.png"
+                width=256px>  
+                <a href="#sec1">
+                  
+                  <div class="atras">
+                  <img src=" http://imgfz.com/i/wEgKjd1.png"
+                       width="10">
+                      </a>
+                    </div>
+                     
+                <p id="usuarios">¿En qué región estás?</p>
+                <hr>
+                <ul class="users">
+        
+                  <li type="none"> ☼ I Tarapacá</li>
+                  <hr>
+                  <li type="none"> ☼ II Antofagasta</li>
+                  <hr>
+                  <li type="none"> <a class="users" href="#sec3"> ☼ III Atacama</a></li>
+                  <hr>
+                  <li type="none"> ☼ IV Coquimbo</li>
+                  <hr>
+                  <li type="none"> ☼ V Valparaíso</li>
+                  <hr>
+                  <li type="none"> ☼ VI O'Higgins</li>
+                  <hr>
+                  <li type="none"> ☼ VII Maule</li>
+                  <hr>
+                  <li type="none"> ☼ VIII Biobío</li>
+                  <hr>
+                  <li type="none"> ☼ IX Araucanía</li>
+                  <hr>
+                  <li type="none"> ☼ X Los Lagos</li>
+                  <hr>
+                  <li type="none"> ☼ XI Aysén</li>
+                  <hr>
+                  <li type="none"> ☼ XII Magallanes y Antártica Chilena</li>
+                  <hr>
+                  <li type="none"> ☼ Metropilotana</li>
+                  <hr>
+                  <li type="none"> ☼ XIV Los Ríos</li>
+                  <hr>
+                  <li type="none"> ☼ XV Arica y Parinacota</li>
+                  <hr>
+                  <li type="none"> ☼ XVI Ñuble</li>
+                </ul>
+        </section>
+
+<!--Pantalla 3, muestra nombre y ventanas de chat interactivas-->
+<section id="sec3">
+  
+  <div class="volver">
+    <a href="#sec1">
+      <img src="http://imgfz.com/i/eMLkSAB.png"
+           width="150">
+          </a>
+  </div>
+ 
+  <div class="contenedor-chat-uno">
+    <img src="http://imgfz.com/i/o67ALfW.png"
+        width=256px>  
+        <a href="#sec2">
+          <div class="atras">
+          <img src="http://imgfz.com/i/wEgKjd1.png"
+               width="10">
+              </a>
+            </div>
+             
+        <p id="saludo">Hola</p>
+        <hr>
+        <br>
+  <form action="#" method="get" autocomplete="off" onsubmit="return false;">
+    <table class="noborder">
+      <tbody>
+        <tr>
+            <td><input type="text" id="shift" placeholder="Escribe tu clave"></td>
+        </tr>        
+        <tr>
+          <td><textarea id="text" placeholder="Escribe tu mensaje"></textarea></td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button"value="Encriptar" id="btnEncode">Cifrar</button>
+            <button type="button" value="Desencriptar" id="btnDecode">Descifrar</button>
+            <button type="submit" id="enviar-uno">Enviar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+  </div>      
+
+<div class="contenedor-chat-dos">
+        <img src="http://imgfz.com/i/rARldNo.png"
+        width=256px>
+        <a href="#sec2">
+          <div class="atras">
+            <img src="http://imgfz.com/i/wEgKjd1.png"
+                 width="10">
+                </a>
+              </div>
+        <p id="saludo">☼ Red de Ayuda</p>
+        <hr>
+        <br>
+        <form action="#" method="get" autocomplete="off" onsubmit="return false;">
+          <table class="noborder">
+            <tbody>
+              <tr>
+                  <td><input type="number" id="numero" placeholder="Escribe la clave"></td>
+              </tr>        
+              <tr>
+                <td><textarea id="text-dos" placeholder="Escribe tu mensaje"></textarea></td>
+              </tr>
+              <tr>
+                <td>
+                  <button type="button"value="Encriptar" id="btnEncode">Cifrar</button>
+                  <button type="button" value="Desencriptar" id="btnDecode">Descifrar</button>
+                  <button type="submit" id="enviar-dos">Enviar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+
+</div>
+</section>
+
+<script src="index.js" type="module" defer></script>
+</body>
 </html>
+
