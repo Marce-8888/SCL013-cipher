@@ -29,7 +29,7 @@ El Cifrado César es un tipo de cifrado por sustitución, es decir que cada letr
 
 -Decidimos utilizar Trello como herramienta para organizar tareas, ver progreso y tareas pendientes.
 
-Si quieres ver mas, ingresa al siguiente link https://trello.com/b/bRQTC3K5/cifrado-cesar
+Si quieres ver mas, [ingresa aquí.](https://trello.com/b/bRQTC3K5/cifrado-cesar)
 
 -Definimos un esquema de flujo para la aplicación.
 
