@@ -3,11 +3,8 @@
 ## Índice
 
 * [1. Introducción](#1-introducción)
-
 * [2. Proceso](#2-proceso)
-
 * [3. Diseño de interfaz](#3-diseño-de-interfaz)
-
 * [4. UX](#4-ux)
 
 ***
@@ -49,11 +46,11 @@ Decidimos realizar un diseño de interfaz que fuera simple y claro al usarlo, de
 
 La navegación por la app es fácil, los botones e iconos indican las acciones que se deben realizar, es intuitiva y similar a muchas otras aplicaciones que se acostumbran usar actualmente.
 
-![pag1](http://imgfz.com/i/iLxS0XP.png)
+![pag1](http://imgfz.com/i/IHuJde5.jpeg)
 
-![pag2](http://imgfz.com/i/q4FmOx9.png)
+![pag2](http://imgfz.com/i/YElWHwX.jpeg)
 
-![pag3](hhttp://imgfz.com/i/3z9X5Ch.png)
+![pag3](http://imgfz.com/i/FETu398.jpeg)
 
 ## 4. UX
 

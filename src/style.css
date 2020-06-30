@@ -137,7 +137,7 @@ hr, .hrcolor {
     background-color: #eccfc1;
 }
 
-#saludo{
+#saludo, #hi{
     display: inline-block;
     color: white;
     font-size: 14px;
